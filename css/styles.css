@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
-    --color-primary: #ffc107;
+    --color-primary: #daac00;
     --color-secondary: #ffeb3b;
     --color-accent: #4caf50;
     --color-text: black;
     --color-background: #f9f9f9;
-    --color-footer: #fff;
+    --color-texthf: #fff;
     --color-white: white;
     --color-hover: #00bec9;
 }
@@ -27,25 +27,70 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 30px 30px;
 }
-.header__menu {
+
+.header__logo img {
+    height: 30px; /* Ajusta tamaño del logo*/
+    width: auto;
+    margin-left: 6.5rem;
+}
+
+.header__nav .header__menu {
     list-style: none;
     display: flex;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
-.header__item {
-    margin-right: 15px;
-}
+
 .header__link {
     text-decoration: none;
-    color: var(--color-text);
-}
-.header__input, .header__button {
-    padding: 5px;
+    font-size: 20px;
+    color: var(--color-texthf);
+    font-weight: bold;
 }
 
+.header__link:hover {
+    color: var(--color-hover); 
+    transform: scale(1.1); 
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: #fcc302;
+    overflow: hidden;
+    margin-right: 6.5rem;
+}
+
+.header__input {
+    border: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    outline: none;
+    background-color : transparent; 
+}
+
+.header__button {
+    background-color: #fcc302;
+    border: none;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header__button:hover {
+    background-color: var(--color-hover);
+}
+
+.header__lupa-icon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease; 
+}
 .main {
     background-color: var(--color-background);
 }
@@ -124,7 +169,7 @@ footer {
 
 footer h4 {
     font-weight: 550;
-    color: var(--color-footer);
+    color: var(--color-texthf);
     font-size: 30px;
     margin: 0 0 10px 0 ;
 }
@@ -142,7 +187,7 @@ footer h4 {
 }
 
 .footer__link {
-    color: var(--color-footer);
+    color: var(--color-texthf);
     text-decoration: none;
     font-size: 20px;
 }
@@ -152,14 +197,14 @@ footer h4 {
 }
 
 footer h5 {
-    color: var(--color-footer);
+    color: var(--color-texthf);
     font-size: 30px;
     margin-bottom: 0%;
     text-align: end;
 }
 
 .footer__description{
-    color: var(--color-footer);
+    color: var(--color-texthf);
     font-size: 20px;
     margin-top: 1%;
 }
