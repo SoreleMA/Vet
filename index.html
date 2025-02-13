@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Veterinarian specialized in pet care. Immunization services, dental care and more.">
     <link rel="icon" type="image/ico" href="./img/header/poppi.ico">
-    <meta name="author" content="TuNombre">
+    <meta name="author" content="PuppiesVET">
     <title>Puppies</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <header class="header">
@@ -46,6 +47,26 @@
             </div>
             <div class="hero__dog">
                 <img class="hero__dogimg" src="./img/hero/dog.png" alt="Dog"/>
+            </div>
+        </section>
+
+        <section class="care">
+            <div class="care__text">
+                <h2 class="care__title">As a veterinarian and<br>lover of animals.</h2>
+                <p class="care__description">
+                    Lorem Ipsum available but the majority have <br>suffered alteration in some form, by injected <br>humour randomised words.
+                </p>
+                <div class="care__actions">
+                    <button class="care__button care__button--secondary">Our Service</button>
+                </div>
+            </div>
+            <div class="care__video">
+                <!-- Enlace para abrir el video en popup -->
+                <a href="https://www.youtube.com/watch?v=2cGp7__bNZ8" class="popup-video">
+                    <img class="care__video-thumbnail" src="/img/care/min_video.png" alt="Mini Video">
+                    <div class="care__video-overlay"></div>
+                    <img class="care__video-play-icon" src="/img/care/play-ico.png" alt="Play">   
+                </a>
             </div>
         </section>
 
@@ -137,5 +158,9 @@
         </div>
        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
