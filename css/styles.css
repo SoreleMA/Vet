@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
     --color-primary: #daac00;
-    --color-secondary: #ffeb3b;
+    --color-secondary: #fbc302;
     --color-accent: #4caf50;
     --color-text: black;
     --color-background: #f9f9f9;
@@ -96,26 +96,61 @@ body {
 }
 
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--color-secondary);
-    text-align: center;
-    padding: 50px 20px;
+    text-align:left;
+    padding: 50px 100px;
+    gap: 50px;
 }
+
+.hero__dog {
+    flex-shrink: 0;
+    max-width: 40%; /* Limita el ancho de la imagen */
+} 
+
+.hero__dogimg {
+    width: 100%; /* Hace que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 400px; /* Máximo tamaño de la imagen */
+}
+
+.hero__text {
+    color: var(--color-texthf);
+    font-size: 30px;
+    flex: 1;
+    max-width: 45%; /* Limita el ancho del texto */
+    line-height: 1;
+}
+
 .hero__title {
-    font-size: 2.5em;
+    font-weight: 500;
+    font-size: 50px;
     margin-bottom: 10px;
+    
 }
+
 .hero__description {
+    font-size: 18px;
     margin-bottom: 20px;
+    line-height: 1.5; /* Mejora la legibilidad del texto */
 }
+
 .hero__button {
     padding: 10px 20px;
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-texthf);
+    border: 2px solid white;
     cursor: pointer;
+    border-radius: 2px;
+    font-size: 15px;
 }
-.hero__button--secondary {
+
+.hero__button:hover {
     background-color: var(--color-hover);
+    border-color: var(--color-hover); 
+    color: var(--color-texthf); /* Cambia el color del texto a blanco */
 }
 
 .services {
