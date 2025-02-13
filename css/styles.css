@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --color-primary: #ffc107;
+    --color-secondary: #ffeb3b;
+    --color-accent: #4caf50;
+    --color-text: black;
+    --color-background: #f9f9f9;
+    --color-footer: #fff;
+    --color-white: white;
+    --color-hover: #00bec9;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.header {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.header__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header__item {
+    margin-right: 15px;
+}
+.header__link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+.header__input, .header__button {
+    padding: 5px;
+}
+
+.main {
+    background-color: var(--color-background);
+}
+
+.hero {
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero__title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero__description {
+    margin-bottom: 20px;
+}
+.hero__button {
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+.hero__button--secondary {
+    background-color: var(--color-hover);
+}
+
+.services {
+    background-color: var(--color-white);
+    padding: 20px;
+}
+.services__list {
+    display: flex;
+    justify-content: space-around;
+}
+.services__item {
+    text-align: center;
+    background-color: var(--color-secondary);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.team {
+    background-color: var(--color-white);
+    padding: 20px;
+}
+.team__members {
+    display: flex;
+    justify-content: space-around;
+}
+.team__member {
+    text-align: center;
+}
+
+.posts {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.posts__item {
+    background-color: var(--color-white);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 230px;
+    background: #343434;
+    padding: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer h4 {
+    font-weight: 550;
+    color: var(--color-footer);
+    font-size: 30px;
+    margin: 0 0 10px 0 ;
+}
+
+
+
+.footer__menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__menu li {
+    display: block;
+}
+
+.footer__link {
+    color: var(--color-footer);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer__link:hover {
+    color: #2196f3;
+}
+
+footer h5 {
+    color: var(--color-footer);
+    font-size: 30px;
+    margin-bottom: 0%;
+    text-align: end;
+}
+
+.footer__description{
+    color: var(--color-footer);
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+
+.footer__socialmedias {
+    text-align: right; 
+}
+
+.footer__sociallinks {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno */
+    margin-top: 20px; /* Espacio entre el formulario y los íconos */
+    display: flex; /* Utiliza flexbox para alinear los íconos horizontalmente */
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+}
+
+.footer__sociallinks li {
+    margin-left: 15px; /* Espaciado entre los íconos */
+}
+
+.footer__sociallinks__icon {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px; /* Ajusta el tamaño de los íconos */
+}
+
+
+
+.footer_form-container {
+    display: flex;
+    align-items: center;
+    background-color: #cde210;
+    overflow: hidden;
+}
+
+.footer_form-input {
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    outline: none;
+    background-color : transparent; 
+}
+
+
+.footer_form-btn {
+    background-color: #cde210;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer__telegram-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease; 
+}
+
+.footer_form-btn:hover {
+    background-color: var(--color-hover);
+}
+
+
+
+
